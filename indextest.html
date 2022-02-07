@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jump Like A Frog</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html" style="text-decoration:none">
+                <img id="logo" src="indextest_images/logo.png"/> <!--הלוגו של המשחק שלכם-->
+                <p>Jump Like A Frog</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <h1>אודות</h1>
+			<p>אפיון ופיתוח: אברהמי רועי, אמויאל לורן, וולוקיטה זוהר</p>
+			<div class="DivA">
+				<p>אופיין ופותח במסגרת פרויקט בקורסים</p>
+				<p>סביבות לימוד אינטראקטיביות 1</p>
+				<p>תכנות אינטראקטיבי 1</p>
+				<p>תשפ"א</p>
+			</div>	
+			<img class="pagePhoto" src="indextest_images/HITlogo.png";/> <!--הלוגו של HIT-->
+			<a class="closeAbout"><img id="btn" src="indextest_images/btn_close.png";/></a>
+			
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+			<h1>איך משחקים?</h1>
+			<div class="DivA">
+				<p><b>מטרת המשחק:</b></p>
+				<p>בחרו בתשובה הנכונה לשאלה המוצגת בזמן המהיר ביותר</p>
+				<p>לחצו עם עכבר על התשובות והכפתורים השונים במשחק<p>
+			</div>
+			<a class="closeHowToPlay"><img id="btnClosehowtoplay" src="indextest_images/btn_close.png";/></a>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="GAME.html" >Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
